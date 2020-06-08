@@ -1,0 +1,387 @@
+@import url(./fonts.css);
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg.jpg) no-repeat;
+	background-position: top;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 8px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    padding-top: 70px;
+}
+nav.black{
+	background-color: #fff;
+	height: 80px;
+	padding: 5px 10px;
+	z-index: 1;
+}
+nav .logo{
+    float: left;
+    margin-left: 40px;
+}
+
+nav .logo h1{
+    transition: .5s;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+    color: white;
+	font-size: 55px;
+	font-weight: 450;
+    word-spacing: 0.8rem;
+    letter-spacing: -4pt;
+}
+
+nav.black .logo h1{
+	font-size: 50px;
+	color: #0179E1;
+	letter-spacing: 0pt;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 80px;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: .5s;
+    color: white;
+	font-size: 34px;
+	font-weight: 400;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	margin-right: 20px;
+	letter-spacing: -2pt;
+}
+
+nav.black ul li a{
+	color: #0179E1;
+	font-size: 30px;
+	line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: #fff;
+    border-bottom: 4px solid white;
+    text-decoration: none;
+}
+
+nav.black ul li a.active,
+nav.black ul li a:hover{
+	color: #0179E1;
+	border-bottom: 3px solid #0179E1;
+    text-decoration: none;
+}
+
+#navbarSupportedContent>ul>li.active>a{
+	transition: all 0.7s;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-width: 5px;
+    color: white;
+    transition-duration:0.6s;
+}
+
+.container{
+	font-family: "Bradley Hand ITC";
+	font-size: 56px;
+	font-weight: 600;
+	margin-top: 250px;
+	display: flex;
+	line-height: 3.2rem;
+}
+
+.container .Paragraph p{
+	color: white ;
+	margin-left: 45px;
+}
+
+.container .logo{
+	background-color: white;
+	margin-left: 300px;
+	width: 320px;
+	line-height: 9pt;
+	font-weight: 300;
+	color: #0179E1;
+	height: 390px;
+	border: 5px solid white;
+	border-radius: 32px;
+	box-sizing: border-box;
+	box-shadow: -15px 20px 0 0 rgba(255, 255, 255, 0.801);
+}
+
+.container .logo img{
+	padding-left: 70px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.container .logo h4{
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	font-weight: 400;
+	text-align: center;
+	color: white;
+	background-color: #0179E1;
+	padding: 30px;
+	margin: 0;
+	margin-top: -5px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.container .logo h4:hover{
+	background-color: rgb(255, 255, 255);
+	color: #0179E1;
+	cursor: pointer;
+	border-top: 2px solid #0179E1;
+}
+
+.container .logo .p{
+	font-size: 28px;
+	font-style: italic;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.join{
+	background-color: white;
+	color: #0179E1;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	font-size: 33px;
+	word-spacing: 0.2rem;
+	width: 30%;
+	height: 75px;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 40px;
+	margin-left: 70px;
+	margin-top: -20px;
+}
+
+.join:hover{
+	background-color: #0179E1;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+/*----------------- Box area ------------------*/
+.box{
+	background: white;
+	margin-top: 150px;
+	padding-top: 20px;
+	background-size: cover;
+}
+
+.box a:hover{
+	text-decoration: none;
+}
+
+.box .type-1{
+	display: flex;
+	position: relative;
+	top: 10px;
+	left: 70px;
+}
+
+.box-1, .box-2, .box-3{
+	border: 2px solid #0179E1;
+	width: 395px;
+	margin: 30px;
+	border-radius: 15px;
+	height: 200px;
+	color: #0179E1
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover{
+	box-shadow: #0179E1;
+	background: #0179E1;
+	color: white;
+	box-shadow: 7px 7px 0 0 rgba(66, 174, 224, 0.342);
+}
+.box-1 h3, .box-2 h3, .box-3 h3{
+	position: relative;
+	left: 120px;
+	top: -25px;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: -2pt;
+	word-spacing: 4pt;
+}
+
+.box-1 h2, .box-2 h2, .box-3 h2{
+	position: relative;
+	left: 275px;
+	top: -95px;
+	font-family: "Poppins";
+	font-size: 60px;
+}
+
+.box-1 p, .box-2 p, .box-3 p{
+	position: relative;
+	left: 230px;
+	top: -30px;
+	font-family: "Bradley Hand ITC";
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.box-1 h5, .box-2 h5, .box-3 h5{
+	position: relative;
+	left: 30px;
+	top: -34px;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 1pt;
+	word-spacing: 4pt;
+}
+
+.box-1 img, .box-2 img, .box-3 img{
+	position: relative;
+	left: 40px;
+	top: 25px;
+}
+
+.type-2{
+	display: flex;
+	position: relative;
+	left: 100px;
+	padding: 0;
+}
+
+.box-4{
+	padding: 20px;
+}
+
+.box-4:hover, .box-5:hover, .box-6:hover, .box-7:hover, .box-8:hover{
+	filter: brightness(1.2);
+}
+
+.box-4 h2{
+	color: white;
+	position: relative;
+	top: -52px;
+	left: 235px;
+	font-family: "Bahnschrift";
+	font-weight: normal;
+}
+
+.box-5{
+	padding: 20px 15px;
+}
+
+.box-5 h2{
+	color: white;
+	position: relative;
+	top: -52px;
+	left: 30px;
+	font-family: "Bahnschrift";
+	font-weight: normal;
+}
+
+.type-3{
+	display: flex;
+	position: relative;
+	left: 100px;
+	top: -30px;
+}
+
+.box-6{
+	padding: 0px 20px;
+}
+
+.box-6 h2{
+	color: white;
+	position: relative;
+	top: -150px;
+	left: 30px;
+	font-family: "Bahnschrift";
+	font-weight: normal;
+	line-height: 25pt;
+}
+
+.box-7, .box-8{
+	padding: 0 20px;
+}
+
+.footer{
+	background: url(../img/Untitled-1.png) no-repeat;
+	padding: 30px;
+}
+
+.main{
+	display: flex;
+}
+
+.box1{
+	margin: 50px;
+}
+
+.box1 p{
+	background-color: white;
+	color: #0179E1;
+	font-family: "Bahnschrift";
+	font-stretch: normal;
+	font-size: 28px;
+	word-spacing: 0.2rem;
+	width: 330px;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 40px;
+	margin: 30px;
+}
+
+.box2{
+	padding-top: 40px;
+	padding-left: 0;
+	color: white;
+	padding-right: 120px;
+}
+
+.box2 h2{
+	letter-spacing: -2pt;
+	font-family: "Bahnschrift";
+	font-weight: 400;
+	word-spacing: 4pt;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+.box2 p{
+	font-family: "Bahnschrift";
+	font-style: italic;
+	font-size: 22px;
+	line-height: 1.4rem;
+	font-weight: 350;
+}
+
+.end p{
+	font-family: "Bradley Hand ITC";
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+	color: white;
+	letter-spacing: 1pt;
+}

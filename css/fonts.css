@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "Bahnschrift";
+    
+    src: url(../fonts/Bahnschrift/BAHNSCHRIFT.TTF);
+
+    font-family: "Bradley Hand ITC";
+    src: url(../fonts/Bradley/BRADHITC.ttf);
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
